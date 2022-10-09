@@ -100,7 +100,7 @@ plt.title("Training-Validation Accuracy")
 
 """#streamlit"""
 
-! pip install -q streamlit
+!pip install -q streamlit
 
 # Commented out IPython magic to ensure Python compatibility.
 !mkdir -p /drive/ngrok-ssh

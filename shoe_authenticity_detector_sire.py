@@ -7,7 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1Uye6gAfNNJG-o0l3naLvlYslcw5O5ypn
 """
 
-
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from google.colab import drive
+drive.mount('/content/drive')
 path = '/content/drive/MyDrive/shoedataset'
 import requests
 

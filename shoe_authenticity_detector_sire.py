@@ -16,7 +16,11 @@ st.markdown(
     """
 <style>
 
-    background-image: linear-gradient(#2e7bcf,#2e7bcf);
+    body {
+  background: #ff0099; 
+  background: -webkit-linear-gradient(to right, #ff0099, #493240); 
+  background: linear-gradient(to right, #ff0099, #493240); 
+    }
     
 }
 

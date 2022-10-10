@@ -87,8 +87,8 @@ if selection == 'CHECK YOUR SHOES':
         st.image(image)
         predictionText = (import_and_predict(Image.open(image), loaded_model))
 
-    #st.markdown(predictionText)   
-    st.markdown('<p class="font2">predictionText</p>', unsafe_allow_html=True)
+    st.markdown(predictionText)   
+    #st.markdown('<p class="font2">predictionText</p>', unsafe_allow_html=True)
     
 
 if selection == 'ABOUT':

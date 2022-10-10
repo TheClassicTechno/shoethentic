@@ -16,13 +16,13 @@ from st_btn_select import st_btn_select
 
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 st.markdown(""" <style> .font {
-font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
+font-size:50px ; color: #7792E3;} 
 </style> """, unsafe_allow_html=True)
-st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
+st.markdown('<p class="font">Shoethentic</p>', unsafe_allow_html=True)
 
 if selection == 'CHECK YOUR SHOES':
     
-    st.title("Shoethentic")
+
     st.header("Created by Julia Huang & Justin Huang")
     st.header("Detect if your shoes are fake or not via AI!")
     st.subheader("Quick and easy; you only need to upload images to receive an automatic result!")

@@ -101,7 +101,6 @@ if __name__ == "__main__":
 #processing images
 
 
-"""created by Julia Huang"""
 """
 from tensorflow import keras
 from tensorflow.keras import layers

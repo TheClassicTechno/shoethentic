@@ -13,27 +13,41 @@ from st_btn_select import st_btn_select
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 
 
-
+import base64
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+add_bg_from_local('purple.jpg')    
+    
 
 if selection == 'CHECK YOUR SHOES':
   
 
-    st.markdown("""
-    <style>
-    body {
-    background: #ff0099; 
-    background: -webkit-linear-gradient(to right, #ff0099, #493240); 
-    background: linear-gradient(to right, #ff0099, #493240); 
-    }
-    </style>
-    """, unsafe_allow_html=True)
+  
                               
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">Shoethentic</p>', unsafe_allow_html=True)
     
-    st.header("Created by Julia Huang & Justin Huang")
+    st.markdown(""" <style> .font {
+    font-size:20px ;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Created by Julia & Justin Huang</p>', unsafe_allow_html=True)
+    
+    
+    
     st.header("Detect if your shoes are fake or not via AI!")
     st.subheader("Quick and easy; you only need to upload images to receive an automatic result!")
 

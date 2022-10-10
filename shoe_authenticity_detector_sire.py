@@ -54,7 +54,7 @@ if selection == 'CHECK YOUR SHOES':
     st.markdown(""" <style> .font3 {
     font-size:35px ; font-weight: 600; color: #ff958a; background-color: #0a0302;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Detect if your shoes are fake or not via AI technology: receive a quick & convenient result</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">Detect if your shoes are fake or not via AI technology: receive a quick & convenient result within seconds!</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font5 {
     font-size:25px ; font-weight: 600; color: #2e0a06; background-color: #fcf6f5;} 
@@ -106,13 +106,55 @@ if selection == 'ABOUT':
     add_bg_from_local('shoebackground.PNG')    
     
     st.markdown(""" <style> .font {
-    font-size:50px ; font-weight: 800; color: #7792E3;} 
+    font-size:50px ; font-weight: 800; color: #7792E3; background-color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">About Shoethentic</p>', unsafe_allow_html=True)
    
-    st.subheader("About the Creator")
-    st.markdown("Shoethentic's web app and model is built by Julia Huang, a current student and developer at Sire, and the dataset is created by Justin Huang.")
 
+    st.markdown(""" <style> .font {
+    font-size:40px ; font-weight: 800; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">About the Creator</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font {
+    font-size:25px ; font-weight: 600; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">The web app and model portion is built by Julia Huang, a current student and developer at Sire, and the dataset is created by Justin Huang.</p>', unsafe_allow_html=True)
+  
+    
+    
+    st.markdown(""" <style> .font {
+    font-size:40px ; font-weight: 800; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Mission</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font {
+    font-size:25px ; font-weight: 600; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Due to the high prevalence of counterfeit shoe production, the goal of **Shoethentic** is to provide the sneakerhead community an opportunity to check the authenticity of each and every shoe they buy. **Shoethentic** aims to make this checking process simpler and more convenient by utilizing AI & machine learning.</p>', unsafe_allow_html=True)
+    
+    st.markdown(""" <style> .font {
+    font-size:40px ; font-weight: 800; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">How Shoethentic was Built"</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font {
+    font-size:25px ; font-weight: 600; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Shoethentic has two parts: the AI model and web app. The AI model is built using the TensorFlow framework in the Python Language while the web app is built using Streamlit. We trained the model in Google Colab on a dataset consisting of fake and real shoe images sourced from the CheckCheck mobile app and deployed it into the web app.</p>', unsafe_allow_html=True)
+    
+    st.markdown(""" <style> .font {
+    font-size:40px ; font-weight: 800; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Future of Shoethentic</p>', unsafe_allow_html=True)
+
+    st.markdown(""" <style> .font {
+    font-size:25px ; font-weight: 600; color: #fffafa;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">We plan to improve the accuracy of the AI model even more when checking for shoes and integrate it into the Sire website later on.</p>', unsafe_allow_html=True)
+    
+    
+    '''
     st.subheader("Mission")
     st.markdown("Due to the high prevalence of counterfeit shoe production, the goal of **Shoethentic** is to provide the sneakerhead community an opportunity to check the authenticity of each and every shoe they buy. **Shoethentic** aims to make this checking process simpler and more convenient by utilizing AI & machine learning.")
     st.subheader("How Shoethentic was Built")
@@ -121,5 +163,5 @@ if selection == 'ABOUT':
  
     st.subheader("Future of Shoethentic")
     st.markdown("We plan to improve the accuracy of the AI model even more when checking for shoes and integrate it into the Sire website later on.")
-
+    '''
 

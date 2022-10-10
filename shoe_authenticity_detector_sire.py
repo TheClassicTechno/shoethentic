@@ -10,6 +10,7 @@ import keras
 from datetime import date
 from st_btn_select import st_btn_select
 
+selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 
 st.markdown(
     """
@@ -52,7 +53,6 @@ header .decoration {
 
 
 
-selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 
 
 if selection == 'CHECK YOUR SHOES':

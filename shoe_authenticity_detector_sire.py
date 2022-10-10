@@ -52,7 +52,7 @@ header .decoration {
 
 </style>
 
-    unsafe_allow_html=True,
+    unsafe_allow_html=True
 )
 if selection == 'CHECK YOUR SHOES':
     

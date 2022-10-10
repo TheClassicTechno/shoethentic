@@ -12,31 +12,24 @@ from st_btn_select import st_btn_select
 
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 
-st.markdown(
-    """
-<style>
-
-    body {
-  background: #ff0099; 
-  background: -webkit-linear-gradient(to right, #ff0099, #493240); 
-  background: linear-gradient(to right, #ff0099, #493240); 
-    }
-    
-}
-
-
-
-</style>
-""",
-    unsafe_allow_html=True,
-)
-
-
 
 
 
 if selection == 'CHECK YOUR SHOES':
-    
+  background: #ff0099; 
+  background: -webkit-linear-gradient(to right, #ff0099, #493240); 
+  background: linear-gradient(to right, #ff0099, #493240);"
+
+    st.markdown("""
+    <style>
+    body {
+    background: #ff0099; 
+    background: -webkit-linear-gradient(to right, #ff0099, #493240); 
+    background: linear-gradient(to right, #ff0099, #493240); 
+    }
+    </style>
+    """, unsafe_allow_html=True)
+                              
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3;} 
     </style> """, unsafe_allow_html=True)

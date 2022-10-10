@@ -11,13 +11,8 @@ from datetime import date
 from st_btn_select import st_btn_select
 
 
-
-
-
-selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
-
 st.markdown(
-    
+    """
 <style>
 .reportview-container .markdown-text-container {
     font-family: monospace;
@@ -51,9 +46,15 @@ header .decoration {
 }
 
 </style>
-
-    unsafe_allow_html=True
+""",
+    unsafe_allow_html=True,
 )
+
+
+
+selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
+
+
 if selection == 'CHECK YOUR SHOES':
     
     st.markdown(""" <style> .font {

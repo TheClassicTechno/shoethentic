@@ -38,18 +38,21 @@ if selection == 'CHECK YOUR SHOES':
 
                               
     st.markdown(""" <style> .font {
-    font-size:50px ; font-weight: 800; color: #7792E3; background-color: #ff7e70;} 
+    font-size:50px ; font-weight: 800; color: #2e0a06; background-color: #ff958a;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">Shoethentic</p>', unsafe_allow_html=True)
     
     st.markdown(""" <style> .font2 {
-    font-size:20px ;} 
+    font-size:20px; color: #fcf6f5;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font2">Created by Julia & Justin Huang</p>', unsafe_allow_html=True)
     
     
-    
-    st.header("Detect if your shoes are fake or not via AI!")
+    st.markdown(""" <style> .font4 {
+    font-size:40px; color: #fcf6f5;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font4">Detect if your shoes are fake or not via AI!</p>', unsafe_allow_html=True)
+   
     
 
     st.markdown(""" <style> .font3 {

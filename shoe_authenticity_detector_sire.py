@@ -56,12 +56,16 @@ if selection == 'CHECK YOUR SHOES':
     
 
     st.markdown(""" <style> .font3 {
-    font-size:35px ; font-weight: 600; color: #7792E3;} 
+    font-size:35px ; font-weight: 600; color: #ff958a;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font3">Quick and easy; you only need to upload images to receive an automatic result!<br><br></p>', unsafe_allow_html=True)
 
-
-    image = st.file_uploader(label = "Upload an image for analysis:", type = ['png', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
+    st.markdown(""" <style> .font5 {
+    font-size:25px ; font-weight: 600; color: #ff958a;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font5">Upload Shoe Image Here<br><br></p>', unsafe_allow_html=True)
+    
+    image = st.file_uploader(label = " ", type = ['png', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
     def import_and_predict(image_data, model):
         size = (227, 227)

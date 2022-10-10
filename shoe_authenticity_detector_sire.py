@@ -41,10 +41,10 @@ if selection == 'CHECK YOUR SHOES':
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">Shoethentic</p>', unsafe_allow_html=True)
     
-    st.markdown(""" <style> .font {
+    st.markdown(""" <style> .font2 {
     font-size:20px ;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font">Created by Julia & Justin Huang</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">Created by Julia & Justin Huang</p>', unsafe_allow_html=True)
     
     
     

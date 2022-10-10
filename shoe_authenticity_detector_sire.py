@@ -28,7 +28,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('purple.jpg')    
+add_bg_from_local('shoebackground.jpg')    
     
 
 if selection == 'CHECK YOUR SHOES':
@@ -54,7 +54,7 @@ if selection == 'CHECK YOUR SHOES':
     st.markdown(""" <style> .font3 {
     font-size:35px ; font-weight: 600; color: #7792E3;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font3">Quick and easy; you only need to upload images to receive an automatic result!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">Quick and easy; you only need to upload images to receive an automatic result!<br><br></p>', unsafe_allow_html=True)
 
 
     image = st.file_uploader(label = "Upload an image for analysis:", type = ['png', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])

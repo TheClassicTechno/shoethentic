@@ -136,7 +136,7 @@ if selection == 'ABOUT':
     st.markdown(""" <style> .font2 {
     font-size:30px ; font-weight: 600; color: #fffafa;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font2">How Shoethentic was Built"</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font2">How Shoethentic was Built</p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font3 {
     font-size:20px ; color: #fffafa;} 

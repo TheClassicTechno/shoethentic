@@ -13,28 +13,28 @@ from st_btn_select import st_btn_select
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 
 
-import base64
-def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
-    st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background-image: url(data:image/{"PNG"};base64,{encoded_string.decode()});
-        background-size: cover
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-    )
-add_bg_from_local('shoebackground.PNG')    
+
     
 
 if selection == 'CHECK YOUR SHOES':
   
+    import base64
+        def add_bg_from_local(image_file):
+        with open(image_file, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read())
+        st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url(data:image/{"PNG"};base64,{encoded_string.decode()});
+            background-size: cover
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+        )
+    add_bg_from_local('shoebackground.PNG')    
 
-  
                               
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3;} 
@@ -84,6 +84,23 @@ if selection == 'CHECK YOUR SHOES':
     
 
 if selection == 'ABOUT':
+     import base64
+        def add_bg_from_local(image_file):
+        with open(image_file, "rb") as image_file:
+            encoded_string = base64.b64encode(image_file.read())
+        st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url(data:image/{"PNG"};base64,{encoded_string.decode()});
+            background-size: cover
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+        )
+    add_bg_from_local('shoebackground2.PNG')    
+    
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3;} 
     </style> """, unsafe_allow_html=True)
@@ -96,7 +113,7 @@ if selection == 'ABOUT':
     st.markdown("Due to the high prevalence of counterfeit shoe production, the goal of **Shoethentic** is to provide the sneakerhead community an opportunity to check the authenticity of each and every shoe they buy. **Shoethentic** aims to make this checking process simpler and more convenient by utilizing AI & machine learning.")
     st.subheader("How Shoethentic was Built")
   
-    st.markdown("Shoethentic has two parts: the AI model and web app. The AI model is built using the TensorFlow framework while the web app is built using Streamlit. We trained the model on a dataset consisting of fake and real shoe images sourced from the CheckCheck mobile app.")
+    st.markdown("Shoethentic has two parts: the AI model and web app. The AI model is built using the TensorFlow framework in the Python Language while the web app is built using Streamlit. We trained the model in Google Colab on a dataset consisting of fake and real shoe images sourced from the CheckCheck mobile app and deployed it into the web app.")
  
     st.subheader("Future of Shoethentic")
     st.markdown("We plan to improve the accuracy of the AI model even more when checking for shoes and integrate it into the Sire website later on.")

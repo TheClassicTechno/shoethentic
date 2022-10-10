@@ -6,8 +6,7 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 import os
-import matplotlib
-import matplotlib.pyplot as plt
+
 import pathlib
 import cv2
 import glob

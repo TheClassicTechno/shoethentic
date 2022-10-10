@@ -15,14 +15,15 @@ from st_btn_select import st_btn_select
 
 
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
-st.markdown(""" <style> .font {
-font-size:50px ; color: #7792E3;} 
-</style> """, unsafe_allow_html=True)
-st.markdown('<p class="font">Shoethentic</p>', unsafe_allow_html=True)
+
 
 if selection == 'CHECK YOUR SHOES':
     
-
+    st.markdown(""" <style> .font {
+    font-size:50px ; font-weight: 800; color: #7792E3;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Shoethentic</p>', unsafe_allow_html=True)
+    
     st.header("Created by Julia Huang & Justin Huang")
     st.header("Detect if your shoes are fake or not via AI!")
     st.subheader("Quick and easy; you only need to upload images to receive an automatic result!")
@@ -56,7 +57,10 @@ if selection == 'CHECK YOUR SHOES':
     
 
 if selection == 'ABOUT':
-    st.title("About")
+    st.markdown(""" <style> .font {
+    font-size:50px ; font-weight: 800; color: #7792E3;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">About Shoethentic</p>', unsafe_allow_html=True)
    
     st.subheader("About the Creator")
     st.markdown("Shoethentic's web app and model is built by Julia Huang, a current student and developer at Sire, and the dataset is created by Justin Huang.")

@@ -19,9 +19,9 @@ selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 if selection == 'CHECK YOUR SHOES':
   
     import base64
-    def add_bg_from_local(image_file):
-        with open(image_file, "rb") as image_file:
-            encoded_string = base64.b64encode(image_file.read())
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
     st.markdown(
     f"""
     <style>
@@ -33,7 +33,8 @@ if selection == 'CHECK YOUR SHOES':
     """,
     unsafe_allow_html=True
     )
-    add_bg_from_local('shoebackground.PNG')    
+add_bg_from_local('shoebackground.PNG')    
+      
 
                               
     st.markdown(""" <style> .font {
@@ -85,9 +86,9 @@ if selection == 'CHECK YOUR SHOES':
 
 if selection == 'ABOUT':
     import base64
-    def add_bg_from_local(image_file):
-        with open(image_file, "rb") as image_file:
-            encoded_string = base64.b64encode(image_file.read())
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
     st.markdown(
     f"""
     <style>
@@ -99,7 +100,7 @@ if selection == 'ABOUT':
     """,
     unsafe_allow_html=True
     )
-    add_bg_from_local('shoebackground2.PNG')    
+add_bg_from_local('shoebackground2.PNG')      
     
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3;} 

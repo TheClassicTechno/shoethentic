@@ -21,14 +21,14 @@ def add_bg_from_local(image_file):
     f"""
     <style>
     .stApp {{
-        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-image: url(data:image/{"PNG"};base64,{encoded_string.decode()});
         background-size: cover
     }}
     </style>
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('shoebackground.png')    
+add_bg_from_local('shoebackground.PNG')    
     
 
 if selection == 'CHECK YOUR SHOES':

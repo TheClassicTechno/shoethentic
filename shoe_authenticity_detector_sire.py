@@ -16,7 +16,9 @@ from st_btn_select import st_btn_select
 
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 
-
+st.markdown(""" <style> .font {
+    background-color: #e7e3ff;} 
+    </style> """, unsafe_allow_html=True)
 if selection == 'CHECK YOUR SHOES':
     
     st.markdown(""" <style> .font {

@@ -61,9 +61,9 @@ if selection == 'CHECK YOUR SHOES':
     st.markdown('<p class="font3">Quick and easy; you only need to upload images to receive an automatic result!<br><br></p>', unsafe_allow_html=True)
 
     st.markdown(""" <style> .font5 {
-    font-size:25px ; font-weight: 600; color: #2e0a06; background-color: #ff958a;} 
+    font-size:25px ; font-weight: 600; color: #2e0a06; background-color: #fcf6f5;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font5">Upload Shoe Image Here</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font5">Upload Shoe Image Here<br><br><br><br><br><br><br><br><br><br><br></p>', unsafe_allow_html=True)
     
     image = st.file_uploader(label = " ", type = ['png', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 

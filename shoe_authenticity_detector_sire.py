@@ -33,7 +33,7 @@ if selection == 'CHECK YOUR SHOES':
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('shoebackground.PNG')    
+    add_bg_from_local('shoebackground2.PNG')    
       
 
                               
@@ -107,7 +107,7 @@ if selection == 'ABOUT':
         """,
         unsafe_allow_html=True
         )
-    add_bg_from_local('shoebackground2.PNG')    
+    add_bg_from_local('shoebackground.PNG')    
     
     st.markdown(""" <style> .font {
     font-size:50px ; font-weight: 800; color: #7792E3;} 

@@ -1,20 +1,3 @@
-from __future__ import print_function
-import os.path
-from tensorflow import keras
-from tensorflow.keras import layers
-from tensorflow.keras.models import Sequential
-import pandas as pd
-import numpy as np
-import tensorflow as tf
-import os
-
-import pathlib
-
-import glob
-import streamlit as st
-from joblib import load
-import numpy as np
-
 from datetime import datetime
 from keras.models import load_model
 import streamlit as st
@@ -28,21 +11,8 @@ from datetime import date
 from st_btn_select import st_btn_select
 
 
-import streamlit as st
-from joblib import load
-import numpy as np
 
-from datetime import datetime
-from keras.models import load_model
-import streamlit as st
-import numpy as np
-import glob
-import pandas as pd
-import tensorflow as tf
-from PIL import Image, ImageOps
-import keras
-from datetime import date
-from st_btn_select import st_btn_select
+
 
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 

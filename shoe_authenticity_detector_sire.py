@@ -15,6 +15,14 @@ from st_btn_select import st_btn_select
 
 
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
+# Primary accent for interactive elements
+primaryColor = '#7792E3'
+
+# Background color for the main content area
+backgroundColor = '#273346'
+
+# Background color for sidebar and most interactive widgets
+secondaryBackgroundColor = '#B9F1C0'
 
 if selection == 'CHECK YOUR SHOES':
     

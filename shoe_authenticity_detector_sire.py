@@ -16,9 +16,7 @@ selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
 
 
 if selection == 'CHECK YOUR SHOES':
-  background: #ff0099; 
-  background: -webkit-linear-gradient(to right, #ff0099, #493240); 
-  background: linear-gradient(to right, #ff0099, #493240);"
+  
 
     st.markdown("""
     <style>

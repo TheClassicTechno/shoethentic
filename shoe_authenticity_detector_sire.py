@@ -20,7 +20,7 @@ if selection == 'CHECK YOUR SHOES':
   
     import base64
     def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
+        with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
     st.markdown(
     f"""
@@ -86,7 +86,7 @@ if selection == 'CHECK YOUR SHOES':
 if selection == 'ABOUT':
     import base64
     def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
+        with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
     st.markdown(
     f"""

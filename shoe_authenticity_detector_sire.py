@@ -38,7 +38,7 @@ if selection == 'CHECK YOUR SHOES':
 
                               
     st.markdown(""" <style> .font {
-    font-size:50px ; font-weight: 800; color: #7792E3;} 
+    font-size:50px ; font-weight: 800; color: #7792E3; background-color: #ff7e70;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">Shoethentic</p>', unsafe_allow_html=True)
     

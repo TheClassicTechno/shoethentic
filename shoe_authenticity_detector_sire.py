@@ -51,10 +51,10 @@ if selection == 'CHECK YOUR SHOES':
     st.header("Detect if your shoes are fake or not via AI!")
     
 
-    st.markdown(""" <style> .font {
-    font-size:40px ; font-weight: 600; color: #7792E3;} 
+    st.markdown(""" <style> .font3 {
+    font-size:35px ; font-weight: 600; color: #7792E3;} 
     </style> """, unsafe_allow_html=True)
-    st.markdown('<p class="font">Quick and easy; you only need to upload images to receive an automatic result!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="font3">Quick and easy; you only need to upload images to receive an automatic result!</p>', unsafe_allow_html=True)
 
 
     image = st.file_uploader(label = "Upload an image for analysis:", type = ['png', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])

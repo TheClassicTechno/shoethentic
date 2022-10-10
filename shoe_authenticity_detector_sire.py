@@ -15,14 +15,10 @@ from st_btn_select import st_btn_select
 
 
 selection = st_btn_select(('CHECK YOUR SHOES', 'ABOUT'))
-# Primary accent for interactive elements
-primaryColor = '#7792E3'
-
-# Background color for the main content area
-backgroundColor = '#273346'
-
-# Background color for sidebar and most interactive widgets
-secondaryBackgroundColor = '#B9F1C0'
+st.markdown(""" <style> .font {
+font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
+</style> """, unsafe_allow_html=True)
+st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
 
 if selection == 'CHECK YOUR SHOES':
     

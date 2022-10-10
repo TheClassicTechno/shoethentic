@@ -9,12 +9,12 @@ import tensorflow as tf
 import os
 
 import pathlib
-import cv2
+
 import glob
 import streamlit as st
 from joblib import load
 import numpy as np
-import cv2
+
 from datetime import datetime
 from keras.models import load_model
 import streamlit as st
@@ -31,7 +31,7 @@ from st_btn_select import st_btn_select
 import streamlit as st
 from joblib import load
 import numpy as np
-import cv2
+
 from datetime import datetime
 from keras.models import load_model
 import streamlit as st

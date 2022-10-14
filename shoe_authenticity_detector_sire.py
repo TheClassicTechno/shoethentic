@@ -61,7 +61,7 @@ if selection == 'CHECK YOUR SHOES':
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font5">Upload Shoe Image Here</p>', unsafe_allow_html=True)
     
-    image = st.file_uploader(label = " ", type = ['png', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
+    image = st.file_uploader(label = " ", type = ['png','jfif', 'jpg', 'jpeg', 'tif', 'tiff', 'raw', 'webp'])
 
     def import_and_predict(image_data, model):
         size = (227, 227)
